@@ -1,6 +1,8 @@
 <template>
   <div>Home Page</div>
   <div>
+    <router-link to="api"><span>to Api</span> </router-link>
+    ||
     <router-link to="hello"><span>to helloworld</span> </router-link>
     ||
     <router-link to="about"> <span>to about</span></router-link>

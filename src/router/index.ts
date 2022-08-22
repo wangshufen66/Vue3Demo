@@ -12,6 +12,11 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import('../view/Home.vue'),
   },
   {
+    path: '/api',
+    name: 'api',
+    component: () => import('../view/Api.vue'),
+  },
+  {
     path: '/setup',
     name: 'setup',
     component: () => import('../view/Setup.vue'),
@@ -35,6 +40,25 @@ const routes: Array<RouteRecordRaw> = [
     path: '/hello',
     name: 'hello',
     component: () => import('../components/HelloWorld.vue'),
+  },
+  {
+    path: '/order',
+    name: 'order',
+    component: () => import('@/views/order/Order.vue'),
+    meta: { title: '订单管理', icon: 'Box', show: true, isFrame: true },
+    children: [
+      {
+        path: '/order/ordermaster',
+        name: 'ordermaster',
+        component: () => import('@/views/order/OrderList.vue'),
+        meta: {
+          title: '订单列表',
+          icon: 'Cherry',
+          show: true,
+          isFrame: true,
+        },
+      },
+    ],
   },
 ];
 
