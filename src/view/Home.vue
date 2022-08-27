@@ -12,13 +12,16 @@
     <router-link to="grammer"> <span>to grammer</span></router-link>
     ||
     <router-link to="pinia"> <span>to pinia</span></router-link>
-    <hello-world />
-    <HelloWorld msg="from home"></HelloWorld>
+    <Hello msg="from home1" />
+    <Hello msg="from home2"></Hello>
+    <TelePort />
   </div>
 </template>
 
 <script setup lang="ts">
-import HelloWorld from '../components/HelloWorld.vue';
+// import HelloWorld from '../components/HelloWorld.vue';
+import TelePort from '@/components/Teleport.vue';
+import Hello from '@/components/HelloWorld.vue'
 </script>
 
 <style></style>

@@ -44,13 +44,13 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/order',
     name: 'order',
-    component: () => import('@/views/order/Order.vue'),
+    component: () => import('@/view/order/Order.vue'),
     meta: { title: '订单管理', icon: 'Box', show: true, isFrame: true },
     children: [
       {
         path: '/order/ordermaster',
         name: 'ordermaster',
-        component: () => import('@/views/order/OrderList.vue'),
+        component: () => import('@/view/order/OrderList.vue'),
         meta: {
           title: '订单列表',
           icon: 'Cherry',
