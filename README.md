@@ -8,3 +8,5 @@ const route = useRoute();
 const router = useRouter();
 获取路由参数：const id = route.query.id
 路由跳转： router.push( name: “login” ,query:{id:250});
+
+tt
